@@ -8,12 +8,12 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Department extends Model
 {
     //
-    protected $fillable = 
+    protected $fillable =
     ['name',
      'is_active',
       'is_general'
       ];
-   
+
     public function users():HasMany
     {
         return $this->hasMany(User::class);
